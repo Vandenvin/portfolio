@@ -17,24 +17,24 @@
 .header {
   display: flex;
   align-items: center;
-  // justify-content: space-between;
-  justify-content: flex-start;
+  justify-content: space-between;
+  // justify-content: flex-start;
 }
 
-.navigation__logo {
-  // margin-right: 200px;
-  @media screen and (min-width: 480px) {
-    margin-right: 20px;
-  }
+// .navigation__logo {
+//   // margin-right: 200px;
+//   @media screen and (min-width: 480px) {
+//     margin-right: 20px;
+//   }
 
-  @media screen and (min-width: 768px) {
-    margin-right: 100px;
-  }
+//   @media screen and (min-width: 768px) {
+//     margin-right: 100px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    margin-right: 260px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     margin-right: 100px;
+//   }
+// }
 
 // Стилизация блока с кнопками перехода
 .navigation__pages {
@@ -43,65 +43,72 @@
   padding: 0;
 }
 
+.navigation__link {
+  text-decoration: none;
+  color: $header-color;
+}
+
 .navigation__item {
   @extend %list;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 10px;
   }
-}
 
-.navigation__link,
-.header-contact__link {
-  text-decoration: none;
   color: $header-color;
+  font-size: 20px;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 500ms;
 
-  transition: color 250ms $delay;
+  &:hover .navigation__link {
+    color: $header-background-color;
+  }
 
-  &:hover {
-    color: $header-focus-color;
+  & span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: $header-color;
+    transform: translateY(150%);
+    border-radius: 50%;
+    right: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+
+  &:hover span {
+    transform: translateY(0) scale(2);
+  }
+  & span:nth-child(1) {
+    --n: 1;
+  }
+  span:nth-child(2) {
+    --n: 2;
+  }
+  span:nth-child(3) {
+    --n: 3;
+  }
+  span:nth-child(4) {
+    --n: 4;
   }
 }
 
-.navigation__link--current {
-  color: $header-focus-color;
+//If current page
+.navigation__item--current .navigation__link {
+  color: $header-background-color;
+}
+
+.navigation__item--current span {
+  transform: translateY(0) scale(2);
 }
 
 // Стилизация блока с контактами
-
-.header__contact {
-  @extend %list;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-}
-
-.header-contact__item {
-  align-items: center;
-  justify-content: center;
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
-}
-
-.header-contact__icon {
-  cursor: pointer;
-
-  fill: $header-color;
-  transition: fill 250ms $delay;
-
-  &:hover {
-    fill: $header-focus-color;
-  }
-}
-.js-header-mail,
-.js-header-tel {
-  text-decoration: none;
-}
-
-.js-header-mail.hidden,
-.js-header-tel.hidden {
-  display: none;
-}
