@@ -1,14 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./sass/main.scss" />
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="container header">
+
+      <div class="navigation__logo">
+        <a href="" class="navigation__link">Serhii Vandenvin</a>
+      </div>
+
+      <nav class="header__navigation">
+
+        <ul class="navigation__pages">
+          <li class="navigation__item list">
+            <a href="" class="navigation__link navigation__link--current">about</a>
+          </li>
+
+          <li class="navigation__item list">
+            <a href="#" class="navigation__link">career</a>
+          </li>
+
+          <li class="navigation__item list">
+            <a href="#" class="navigation__link">portfolio</a>
+          </li>
+
+          <li class="navigation__item list">
+            <a href="#" class="navigation__link">contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="header__contact">
+        <li class="header-contact__item list">
+          <svg class="header-contact__icon  js-header-icon-mail" width="32" height="24">
+            <use href="./images/icon-sprite.svg#icon-mail"></use>
+          </svg>
+        </li>
+
+        <li class="header-contact__item list js-header-mail hidden">
+          <a href="mailto:sevandenvin@gmail.com" class="header-contact__link">
+            sevandenvin@gmail.com
+          </a>
+        </li>
+
+        <li class="header-contact__item list">
+          <svg class="header-contact__icon js-header-icon-tel" width="20" height="32">
+            <use href="./images/icon-sprite.svg#icon-smartphone"></use>
+          </svg>
+        </li>
+
+        <li class="header-contact__item list js-header-tel hidden">
+          <a href="tel:+380957001442" class="header-contact__link">
+            +380957001442
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </header>
+
+  <main>
+    <section class="section-main">
+      <div class="container">
+        <div class="section__title">
+          <h1>About me!</h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, minus magni? Repellendus cum dolore
+          voluptatum quae, assumenda veniam debitis id sit soluta sequi corrupti minima sapiente fugiat adipisci, non ea
+          ex quam? Perferendis obcaecati aliquam ad explicabo cumque minima ratione natus accusamus accusantium tenetur
+          quae, quibusdam quam cupiditate doloremque reiciendis dolores ullam in, mollitia et veritatis placeat
+          repudiandae nostrum necessitatibus! Culpa, accusantium accusamus? Magnam delectus possimus sint placeat optio
+          accusamus hic quisquam labore fugiat quidem, ipsam reprehenderit sed qui aut provident amet quo numquam vero
+          nihil saepe in. Facilis dignissimos pariatur esse, quasi laborum reiciendis sint nesciunt, ipsum suscipit
+          nulla, voluptate assumenda sunt cupiditate. Ullam id animi recusandae libero officia cum optio ut consequatur
+          temporibus obcaecati labore deserunt cupiditate accusamus doloribus illum voluptatum maiores, ab dignissimos
+          provident fuga similique odio tempore. Ut, itaque, eius impedit soluta error saepe aliquam debitis ipsam unde
+          quas voluptas, maiores illo! In quia perferendis illum quam consequuntur pariatur harum commodi labore ducimus
+          nemo, ad quas voluptas, delectus officia unde sapiente enim, voluptatem omnis nihil odio voluptate? Tenetur
+          modi illo labore maxime, perferendis possimus harum et nemo, dolore similique fugit facere qui, laboriosam
+          veniam. Ratione dignissimos facilis eaque harum minus, reiciendis tenetur distinctio, rerum maxime, cumque
+          modi quae ipsum repellat deserunt quo sunt iste culpa suscipit sapiente voluptate commodi illum ea illo quam!
+          Velit beatae eligendi provident recusandae similique perspiciatis repudiandae cum eius maxime pariatur
+          doloribus consequatur magni ab laborum, esse ea incidunt voluptatum sapiente ducimus mollitia distinctio vel
+          minima corrupti optio. Harum non unde numquam perferendis, cupiditate modi explicabo minima qui praesentium
+          cumque, reiciendis libero, fuga delectus ratione. Tempore, quas? Quod officiis minima provident magnam
+          repellendus, error libero iste vero assumenda ullam vitae numquam praesentium dolores doloribus culpa tempora
+          voluptate id reprehenderit a facere rerum perferendis? Maxime hic quam inventore molestias libero? Perferendis
+          fuga totam itaque molestiae id animi tempore, similique alias dolorem ipsa facilis quasi repellendus ipsam
+          sequi ea, nesciunt accusamus ducimus illo, maiores sint commodi laborum quos quibusdam modi? Exercitationem
+          accusamus et vero pariatur reiciendis ut suscipit est nesciunt velit consequuntur, vel ex corporis, deleniti
+          delectus? Enim adipisci provident corporis amet laudantium consequatur nam! Incidunt dolorem modi culpa
+          dolores porro fuga voluptate id voluptatibus, earum labore autem odio consectetur omnis quae libero accusamus
+          ad ab est iste repudiandae vero reprehenderit. Inventore perferendis ut velit iure modi facilis consectetur,
+          eos veniam ducimus vel error illum, odio facere soluta voluptatibus officiis et, alias amet porro
+          exercitationem adipisci magnam? Optio distinctio error odio commodi esse labore dignissimos quas, quo
+          nesciunt! Fugiat consequuntur eius doloremque natus minus voluptas, laborum commodi cupiditate eligendi
+          maiores dolor corrupti ducimus mollitia voluptatem quibusdam, repellat numquam dignissimos praesentium, ipsum
+          similique sapiente? Eos quidem, sit totam odit maiores praesentium libero, nam incidunt eligendi ut, aliquam
+          iste commodi? Ratione, optio dolores. Cupiditate officiis tenetur nihil labore perspiciatis voluptates
+          necessitatibus tempore ipsa illum minus reiciendis maxime totam porro, architecto natus, at dolore adipisci
+          voluptatibus corporis atque velit odit molestias consequuntur. Dolore delectus dicta quidem voluptatem nemo,
+          tempore enim illo temporibus id, sunt veritatis laudantium. Totam iusto aspernatur earum quasi temporibus
+          deserunt, eius fuga quos porro facilis architecto. Et minus sapiente, quod in nesciunt cum nisi iusto maxime
+          autem? Culpa, sequi praesentium voluptatum laborum aperiam ad dicta ex at distinctio! Unde eius nulla nostrum
+          ullam distinctio quia, dolores odio saepe, natus explicabo laborum sint architecto quaerat aut vitae. Tempora
+          pariatur sapiente debitis impedit blanditiis soluta consequuntur provident est, fugiat quod optio ab natus
+          voluptates corporis ipsam porro perspiciatis vitae voluptas. Aliquid neque vitae earum itaque. Aliquam ab
+          maxime optio, aliquid distinctio suscipit, est nihil, vero similique provident ex error necessitatibus.
+          Laudantium iusto numquam quisquam architecto aspernatur temporibus nesciunt, eaque perspiciatis, eligendi vel
+          amet explicabo suscipit repellat deleniti unde, odio illo dolorem itaque! Suscipit eius nobis veritatis ea
+          nihil facere molestias blanditiis adipisci at nam deleniti, nesciunt fugiat modi inventore, recusandae
+          placeat! Cumque animi iure reiciendis doloremque hic consequuntur eius et quis recusandae optio. Obcaecati,
+          temporibus enim qui, eligendi voluptatibus, optio laborum neque recusandae a dignissimos aspernatur dolorem
+          delectus assumenda minima maiores? Expedita voluptates repudiandae iusto tempore, commodi praesentium fugit
+          dolores voluptas vel consectetur. Sint quos cupiditate rerum qui saepe sit numquam perferendis dicta enim
+          voluptas quisquam aliquam reprehenderit laborum recusandae, tenetur, vel dolores corrupti possimus repellendus
+          culpa cumque quae facilis maxime iusto? Totam molestiae nam veniam exercitationem aliquid sunt repellendus
+          eaque et provident maxime aut quae repudiandae quaerat doloribus dolorum ipsam est, aspernatur eius. Facere
+          officiis quod deserunt illo earum cum saepe amet, voluptatem blanditiis fugit autem sit laborum odit
+          perspiciatis eum obcaecati vero dolorum ullam recusandae! Aut voluptates dolor eaque? Impedit doloribus cum
+          dolorem, pariatur vel ad sunt accusamus reprehenderit! Voluptatem quos obcaecati quidem repudiandae placeat
+          facere quod quaerat distinctio soluta totam vero asperiores in non ducimus libero ullam eos nesciunt
+          doloribus, amet, nobis sint fugiat aperiam. Ex possimus ullam adipisci repellendus, quisquam molestias quidem
+          tempora, rem eos ipsum necessitatibus voluptatum temporibus dolore? Nulla vel deleniti obcaecati! Architecto
+          quod, molestias exercitationem, suscipit dolorem odio ullam at iure est ab amet dignissimos dolore numquam
+          asperiores quo sed unde excepturi eaque doloribus? Aliquid, deleniti saepe iure adipisci vel iste quas vitae
+          ratione delectus nesciunt officiis itaque cum doloremque perferendis repudiandae molestias dolor sequi et
+          nobis asperiores libero aliquam assumenda? Quo, ut cupiditate! Porro quisquam non reprehenderit facere maiores
+          alias nemo, nisi aliquid ex quasi quod suscipit delectus, in, unde laboriosam molestiae accusamus ullam
+          voluptatum similique minus illum! Distinctio perferendis obcaecati, illum, laborum temporibus impedit sequi
+          similique molestiae iure rerum hic ipsam sunt iusto doloremque eligendi maiores beatae voluptatum enim.
+          Ducimus amet eum repudiandae fugit voluptatibus nisi reiciendis perspiciatis quasi dignissimos error odio
+          dolorum magni laboriosam, praesentium odit optio. Amet consequatur exercitationem nam quisquam maiores eum,
+          consectetur est aspernatur accusamus doloribus placeat numquam reprehenderit, alias velit voluptatibus quaerat
+          non vero! Distinctio quas, labore maxime minus ipsum ducimus. Unde consectetur possimus fuga ullam debitis
+          quasi ipsam, eos aut error reprehenderit aliquam molestias iusto placeat architecto, ea rem esse corrupti
+          tempora! Amet nostrum rerum unde temporibus voluptatem, placeat dicta, voluptates tempora quam illum ipsa sed
+          odit nesciunt impedit distinctio eos!</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="footer-info">
+      <p class="footer-info__user-name">&copy; 2022 Serhii Vandenvin</p>
+    </div>
+
+    <div class="footer__btn-up">
+      <a class="top" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+
+  <script type="module" src="./index.js"></script>
+</body>
+
 </html>

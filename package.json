@@ -2,9 +2,9 @@
   "name": "my-portfolio",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://vandenvin.github.io/portfolio/",
   "scripts": {
-    "start": "parcel src/*.html",
+    "start": "parcel src/*.html --open",
     "build": "parcel build src/*.html --public-url /portfolio/"
   },
   "repository": {
@@ -21,8 +21,8 @@
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },

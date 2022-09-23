@@ -1,0 +1,11 @@
+@import './utils/variables';
+@import './utils/placeholders';
+
+@import './common';
+@import './page-header';
+@import './index';
+@import './page-footer';
+
+body {
+  background-color: #fff;
+}
