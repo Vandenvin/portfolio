@@ -5,6 +5,7 @@
   width: 100vw;
   top: 0;
   left: 0;
+  z-index: 2;
 
   background-color: $header-background-color;
   color: $header-color;
@@ -65,7 +66,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
   transition: 500ms;
 
   &:hover .navigation__link {
@@ -128,28 +129,71 @@
   background-color: #fff;
 
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 2;
   opacity: 0.95;
+  padding: 10px;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+@keyframes open {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 
-.dropdown-content a:hover {
+.header-contact__item:hover {
   background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  animation-name: open;
+  animation-duration: 2000ms;
 }
 
 .dropdown:hover span {
   transform: translateY(0) scale(2);
 }
+
 .dropdown:hover .navigation__link {
   color: $header-background-color;
+}
+
+.header-contact__icon-telephone {
+  margin-left: 6px;
+  margin-right: 5px;
+}
+
+.header-contact__list {
+  @extend %list;
+}
+
+.header-contact__mail,
+.header-contact__tel {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-size: 16px;
+  height: 40px;
+}
+
+.header-contact__link {
+  margin-left: 10px;
+  color: $header-background-color;
+  text-decoration: none;
+}
+
+.social-links {
+  @extend %list;
+
+  display: flex;
+  justify-content: center;
+}
+
+.social-links__item:not(:last-child) {
+  margin-right: 20px;
 }

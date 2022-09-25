@@ -1,0 +1,225 @@
+/*career*/
+
+.career {
+  display: flex;
+  flex-wrap: wrap;
+
+  position: relative;
+}
+
+.career__list {
+  padding: 0;
+  margin: 0;
+  margin-left: 150px;
+}
+
+.career__item {
+  text-align: center;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.career__block {
+  width: 380px;
+  border: 1px solid #dedede;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  border-radius: 9px;
+  padding: 15px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.career__title {
+  font-weight: bold;
+}
+
+.career__year {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  line-height: 16px;
+  margin-top: -8px;
+  margin-right: 43px;
+}
+
+.career__year:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #33c1e3;
+  border-radius: 50%;
+  position: absolute;
+  right: -19px;
+  top: 50%;
+  margin-top: -5px;
+  //   z-index: 1;
+}
+
+.career__block:before,
+.career__block:after {
+  content: '';
+  display: block;
+  width: 1px;
+  background: #dddddd;
+  position: absolute;
+  left: -30px;
+}
+
+.career__block:after {
+  bottom: -22px;
+  top: 50%;
+  margin-top: 10px;
+}
+
+.career__block:before {
+  top: 0;
+  bottom: 50%;
+  margin-bottom: 10px;
+}
+
+.career__item:first-child .career__block:before {
+  display: none;
+}
+
+.career__item:last-child .career__block:after {
+  display: none;
+}
+
+.career__chronology {
+  position: sticky;
+  top: 6em;
+}
+
+//Стилизация левого блока при наведении
+
+.career__item:hover {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.career__block:hover {
+  background-color: #33c1e3;
+  color: #fff;
+}
+
+.career__block:hover .career__year {
+  color: #33c1e3;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+}
+
+//JS скрипт, сnавит выбранному блоку класс active
+
+.career__item.active .career__block {
+  background-color: #33c1e3;
+  color: #fff;
+}
+
+.career__item.active .career__year {
+  color: #33c1e3;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+}
+
+//Стилизауия блоков с детальной информацией
+.career__information {
+  width: 480px;
+  margin-left: 50px;
+}
+
+.career-info-1 {
+  display: block;
+
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: $delay;
+}
+
+.career-info-1.hidden {
+  display: none;
+}
+
+.career-info-1 .career-info__img {
+  align-items: center;
+  width: 550px;
+  height: 200px;
+  background-color: coral;
+}
+
+.career-info-2 {
+  display: block;
+
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: $delay;
+}
+
+.career-info-2.hidden {
+  display: none;
+}
+
+.career-info-2 .career-info__img {
+  align-items: center;
+  width: 550px;
+  height: 200px;
+  background-color: blue;
+}
+
+.career-info-3 {
+  display: block;
+
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: $delay;
+}
+
+.career-info-3.hidden {
+  display: none;
+}
+
+.career-info-3 .career-info__img {
+  align-items: center;
+  width: 550px;
+  height: 200px;
+  background-color: blueviolet;
+}
+
+.career-info-4 {
+  display: block;
+
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: $delay;
+}
+
+.career-info-4.hidden {
+  display: none;
+}
+
+.career-info-4 .career-info__img {
+  align-items: center;
+  width: 550px;
+  height: 200px;
+  background-color: red;
+}
+
+.career-info-5 {
+  display: block;
+
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: $delay;
+}
+
+.career-info-5.hidden {
+  display: none;
+}
+
+.career-info-5 .career-info__img {
+  align-items: center;
+  width: 550px;
+  height: 200px;
+  background-color: green;
+}
