@@ -1,9 +1,16 @@
+.section__title {
+  text-transform: uppercase;
+  letter-spacing: 0;
+  background-image: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+}
+
 /*career*/
 
 .career {
   display: flex;
   flex-wrap: wrap;
-
   position: relative;
 }
 
@@ -90,6 +97,7 @@
 .career__chronology {
   position: sticky;
   top: 6em;
+  // outline: 1px dashed black;
 }
 
 //Стилизация левого блока при наведении
@@ -110,7 +118,7 @@
   font-weight: 700;
 }
 
-//JS скрипт, сnавит выбранному блоку класс active
+//JS скрипт, ставит выбранному блоку класс active
 
 .career__item.active .career__block {
   background-color: #33c1e3;
@@ -125,7 +133,7 @@
 
 //Стилизауия блоков с детальной информацией
 .career__information {
-  width: 480px;
+  width: 550px;
   margin-left: 50px;
 }
 
@@ -142,10 +150,9 @@
 }
 
 .career-info-1 .career-info__img {
+  display: flex;
   align-items: center;
   width: 550px;
-  height: 200px;
-  background-color: coral;
 }
 
 .career-info-2 {
@@ -161,10 +168,7 @@
 }
 
 .career-info-2 .career-info__img {
-  align-items: center;
   width: 550px;
-  height: 200px;
-  background-color: blue;
 }
 
 .career-info-3 {
@@ -182,8 +186,6 @@
 .career-info-3 .career-info__img {
   align-items: center;
   width: 550px;
-  height: 200px;
-  background-color: blueviolet;
 }
 
 .career-info-4 {
@@ -201,8 +203,6 @@
 .career-info-4 .career-info__img {
   align-items: center;
   width: 550px;
-  height: 200px;
-  background-color: red;
 }
 
 .career-info-5 {
@@ -220,6 +220,112 @@
 .career-info-5 .career-info__img {
   align-items: center;
   width: 550px;
-  height: 200px;
-  background-color: green;
+}
+
+.career-info__title {
+  margin-top: 10px;
+}
+
+.career-info-1 .career-info__title,
+.career-info-2 .career-info__title,
+.career-info-3 .career-info__title,
+.career-info-4 .career-info__title,
+.career-info-5 .career-info__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  // color: #fb6d3a;
+}
+
+.career-info__comapany {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fb6d3a;
+}
+
+.career-info__logo {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.career-info__additional-info {
+  margin-bottom: 10px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: #000000;
+}
+.career-info__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.career-info__list {
+  margin-top: 5px;
+}
+
+.career-info__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.career-info__subitem {
+  padding-left: 20px;
+}
+
+.career-info__period {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+
+.career-info__slash {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.btn-show {
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  line-height: 37px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+
+  &:hover {
+    background: #85807f;
+    box-shadow: 0 15px 20px rgba(84, 87, 86, 0.4);
+    color: white;
+    transform: translateY(-7px);
+  }
 }
