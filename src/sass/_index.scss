@@ -1,14 +1,172 @@
-.section-main {
-  padding-top: 100px;
-  padding-bottom: 70px;
+.title__text {
+  text-align: center;
+
+  font-size: 54px;
+  line-height: 1.18;
+
+  text-transform: uppercase;
+  letter-spacing: 0;
+  background-image: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+}
+
+.title__thumb {
+  margin-top: 100px;
+  margin-bottom: 30px;
+
   // outline: 1px dashed black;
 }
 
-.section__title {
-  font-size: 36px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
+section.main {
+  // margin-top: 20px;
+  margin-bottom: 100px;
 
+  // outline: 1px dashed black;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // outline: 1px dashed black;
+  position: relative;
+}
+
+.about__left-data {
+  width: 550px;
+  margin-right: 20px;
+
+  // outline: 1px dashed black;
+
+  padding: 10px;
+}
+
+.about__photo {
+  width: 500px;
+  // height: 500px;
+}
+
+.about__sticky-container {
+  position: sticky;
+  top: 6em;
+}
+
+.about__information {
+  width: 550px;
+  padding: 10px;
+}
+
+.about__position {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+
+.about__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+.about__location {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+
+.about__detailed-info {
+  // width: 600px;
+  word-wrap: break-word;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
   margin-bottom: 30px;
+}
+
+.about__projects {
+  margin-right: 250px;
+  margin-bottom: 30px;
+}
+
+.projects__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+
+.project__list {
+  padding: 0;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.project__item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+
+  min-width: 400px;
+}
+
+.project__item-text,
+.project__item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.project__item-link {
+  margin-left: 5px;
+}
+
+.project__item-bracket {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+.about__soft-skills,
+.about__language,
+.about__certifications {
+  margin-bottom: 20px;
+}
+
+.soft-skills__title,
+.language__title,
+.certifications__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  // margin-bottom: 5px;
+}
+
+.soft-skills__list,
+.language__list,
+.certifications__list {
+  margin: 0;
+  margin-top: 10px;
+  padding-left: 30px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }

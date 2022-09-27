@@ -1,9 +1,21 @@
+.section-main {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  // outline: 1px dashed black;
+}
+
 .section__title {
   text-transform: uppercase;
   letter-spacing: 0;
   background-image: linear-gradient(to bottom left, #553c9a, #ee4b2b);
   color: transparent;
   background-clip: text;
+
+  font-size: 36px;
+  line-height: 1.18;
+  text-align: center;
+
+  margin-bottom: 30px;
 }
 
 /*career*/
