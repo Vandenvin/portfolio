@@ -19,8 +19,8 @@
 }
 
 section.main {
-  // margin-top: 20px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  // margin-bottom: 100px;
 
   // outline: 1px dashed black;
 }
@@ -98,14 +98,6 @@ section.main {
   margin-bottom: 30px;
 }
 
-.projects__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 17px;
-  margin-bottom: 10px;
-}
-
 .project__list {
   padding: 0;
   margin-left: 25px;
@@ -150,12 +142,18 @@ section.main {
 
 .soft-skills__title,
 .language__title,
-.certifications__title {
+.certifications__title,
+.projects__title {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 17px;
-  // margin-bottom: 5px;
+
+  transition: color 250ms $delay;
+
+  &:hover {
+    color: #fb6d3a;
+  }
 }
 
 .soft-skills__list,
@@ -169,4 +167,12 @@ section.main {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+}
+
+.orange-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fb6d3a;
 }
