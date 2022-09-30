@@ -12,6 +12,10 @@ p {
   margin-bottom: 0;
 }
 
+a {
+  outline: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -27,6 +31,7 @@ img {
   width: 1200px;
 
   // outline: 1px dashed coral;
+
   // @media screen and (min-width: 480px) {
   //   width: 480px;
   // }

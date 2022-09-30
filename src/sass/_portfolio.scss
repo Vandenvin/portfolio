@@ -46,6 +46,8 @@
 .portfolio__item--top-footer {
   opacity: 0.12;
   height: 40px;
+
+  transition: opacity 500ms $delay;
 }
 
 .portfolio__item:hover .portfolio__item--top-footer {
@@ -142,4 +144,8 @@
   content: '\f10b';
   font-size: 18px;
   margin: 0 5px;
+}
+
+.jsprojests-title__thumb {
+  margin-bottom: 20px;
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video playback</title>
+  <link rel="stylesheet" href="/src/sass/common.scss" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  .iframe {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <!-- <p><a href="/src/index.html">Go back</a></p> -->
+    <button class="btn-home" onclick="document.location='../index.html'"><i class="fa fa-home"></i> Home</button>
+
+    <iframe class="iframe" id="vimeo-player" src="https://player.vimeo.com/video/236203659" width="640" height="360"
+      frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+  </div>
+
+  <script src="/src/js/02-video.js" type="module"></script>
+</body>
+
+</html>

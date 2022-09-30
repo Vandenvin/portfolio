@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown timer</title>
+  <link rel="stylesheet" href="/src/sass/common.scss" />
+  <link rel="stylesheet" href="/src/sass/08-timer.scss" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- <p><a href="/src/index.html">Go back</a></p> -->
+    <button class="btn-home" onclick="document.location='../index.html'"><i class="fa fa-home"></i> Home</button>
+
+    <div class="timer-form">
+
+      <div class="timer-data">
+        <input type="text" id="datetime-picker" />
+        <div class="timer-actions">
+          <button class="btn-data" type="button" data-start disabled data-title="Choose a date">START</button>
+          <button class="btn-data" type="button" data-stop disabled>STOP</button>
+        </div>
+      </div>
+
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">DAYS</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">HOURS</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">MINUTES</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">SECONDS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/src/js/08-timer.js" type="module"></script>
+</body>
+
+</html>

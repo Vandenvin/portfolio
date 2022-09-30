@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 7</title>
+  <link rel="stylesheet" href="../sass/_common.scss" />
+  <link rel="stylesheet" href="../sass/miniprojects/button.scss" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+  .form {
+    display: block;
+
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <!-- <p><a href="/src/index.html">Go back</a></p> -->
+    <button class="btn-home" onclick="document.location='../portfolio.html#FontSizeControl'"><i class="fa fa-home"></i>
+      Home</button>
+
+    <div class="form">
+      <input id="font-size-control" type="range" min="16" max="96" />
+      <br />
+      <span id="text">Abracadabra!</span>
+    </div>
+  </div>
+
+  <script src="../js/miniprojects/05-fontsize.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 4</title>
+  <link rel="stylesheet" href="/src/sass/common.scss" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  .counter {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .value {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 60px;
+    font-weight: 600;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <!-- <p><a href="/src/index.html">Go back</a></p> -->
+    <button class="btn-home" onclick="document.location='../index.html'"><i class="fa fa-home"></i> Home</button>
+
+    <div id="counter" class="counter">
+      <button class="btn-actions" type="button" data-action="decrement">-1</button>
+      <span class="value" id="value">0</span>
+      <button class="btn-actions" type="button" data-action="increment">+1</button>
+    </div>
+  </div>
+
+  <script src="/src/js/04-counter.js" type="module"></script>
+</body>
+
+</html>

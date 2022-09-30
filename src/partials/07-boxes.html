@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boxes</title>
+  <link rel="stylesheet" href="/src/sass/common.scss" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  .data {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .input {
+    font-size: 20px;
+    padding: 10px;
+    width: 80px;
+    height: 50px;
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 0 auto;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <!-- <p><a href="/src/index.html">Go back</a></p> -->
+    <button class="btn-home" onclick="document.location='../index.html'"><i class="fa fa-home"></i> Home</button>
+
+
+    <div id="controls" class="data">
+      <input class="input" type="number" min="1" max="100" step="1" />
+      <div class="buttons">
+        <button class="btn-actions" type="button" data-create>Create</button>
+        <button class="btn-actions" type="button" data-destroy>Destroy</button>
+      </div>
+    </div>
+
+    <div id="boxes" class="boxes"></div>
+  </div>
+  </div>
+  <script src="/src/js/07-boxes.js" type="module"></script>
+</body>
+
+</html>

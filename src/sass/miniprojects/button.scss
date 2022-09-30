@@ -1,0 +1,67 @@
+// Стили для кнопки Домой
+
+.btn-home {
+  margin-bottom: 10px;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-home:hover {
+  background-color: RoyalBlue;
+}
+
+// Стили для кнопок управления counter / Boxes
+
+.btn-actions {
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+
+  &:hover {
+    background: #576e65;
+    box-shadow: 0 15px 20px rgba(52, 55, 54, 0.4);
+    color: white;
+    transform: translateY(-7px);
+  }
+}
+
+.btn-data {
+  padding: 0.75em 1.75em;
+  display: inline-block;
+  line-height: 1;
+  font-weight: 500;
+  // margin: 2em 0;
+  color: #fff;
+  background-color: #2a591d;
+  border: 1px solid #2a591d;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &[disabled],
+  &[disabled]:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: not-allowed;
+    color: #000;
+  }
+}

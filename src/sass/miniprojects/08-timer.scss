@@ -1,0 +1,48 @@
+.timer-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 150px;
+  padding: 10px;
+  border: 2px solid rgb(40, 114, 51);
+  box-shadow: 0 0 15px 4px rgba(60, 168, 66, 0.3);
+  border-radius: 10px;
+}
+
+input[disabled] {
+  border: 2px solid rgb(196, 187, 187);
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.field:not(:last-child) {
+  margin-right: 20px;
+}
+
+.value {
+  font-size: 40px;
+}
+
+.timer-form {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 480px;
+}
+
+.btn-data {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
