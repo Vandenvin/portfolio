@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Task 9</title>
-  <link rel="stylesheet" href="/src/sass/common.scss" />
+  <link rel="stylesheet" href="../sass/_common.scss" />
+  <link rel="stylesheet" href="../sass/miniprojects/button.scss" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     .data {
@@ -17,13 +18,18 @@
     .data [data-start] {
       margin-right: 10px;
     }
+
+    .container {
+      margin-top: 10px;
+    }
   </style>
 
 <body>
   <div class="container">
 
     <!-- <p><a href="/src/index.html">Go back</a></p> -->
-    <button class="btn-home" onclick="document.location='../index.html'"><i class="fa fa-home"></i> Home</button>
+    <button class="btn-home" onclick="document.location='../portfolio.html#ColorSwitcher'"><i class="fa fa-home"></i>
+      Home</button>
 
     <div class="data">
       <button class="btn-data" type="button" data-start>START</button>
@@ -31,7 +37,7 @@
     </div>
   </div>
 
-  <script src="/src/js/06-color-switcher.js" type="module"></script>
+  <script src="../js/miniprojects/06-color-switcher.js" type="module"></script>
 </body>
 
 </html>

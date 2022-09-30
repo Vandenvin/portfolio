@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Boxes</title>
-  <link rel="stylesheet" href="/src/sass/common.scss" />
+  <link rel="stylesheet" href="../sass/_common.scss" />
+  <link rel="stylesheet" href="../sass/miniprojects/button.scss" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
@@ -15,6 +16,10 @@
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
+  }
+
+  h2 {
+    margin-bottom: 10px;
   }
 
   .input {
@@ -33,15 +38,21 @@
     margin: 0 auto;
     text-align: center;
   }
+
+  .container {
+    margin-top: 10px;
+  }
 </style>
 
 <body>
   <div class="container">
     <!-- <p><a href="/src/index.html">Go back</a></p> -->
-    <button class="btn-home" onclick="document.location='../index.html'"><i class="fa fa-home"></i> Home</button>
+    <button class="btn-home" onclick="document.location='../portfolio.html#Boxes'"><i class="fa fa-home"></i>
+      Home</button>
 
 
     <div id="controls" class="data">
+      <h2>Please, enter the quantity of creating boxes:</h2>
       <input class="input" type="number" min="1" max="100" step="1" />
       <div class="buttons">
         <button class="btn-actions" type="button" data-create>Create</button>
@@ -52,7 +63,7 @@
     <div id="boxes" class="boxes"></div>
   </div>
   </div>
-  <script src="/src/js/07-boxes.js" type="module"></script>
+  <script src="../js/miniprojects/07-boxes.js" type="module"></script>
 </body>
 
 </html>

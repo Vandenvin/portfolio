@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Task 4</title>
-  <link rel="stylesheet" href="/src/sass/common.scss" />
+  <link rel="stylesheet" href="../sass/_common.scss" />
+  <link rel="stylesheet" href="../sass/miniprojects/button.scss" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
@@ -22,12 +23,17 @@
     font-size: 60px;
     font-weight: 600;
   }
+
+  .container {
+    margin-top: 10px;
+  }
 </style>
 
 <body>
   <div class="container">
     <!-- <p><a href="/src/index.html">Go back</a></p> -->
-    <button class="btn-home" onclick="document.location='../index.html'"><i class="fa fa-home"></i> Home</button>
+    <button class="btn-home" onclick="document.location='../portfolio.html#Counter'"><i class="fa fa-home"></i>
+      Home</button>
 
     <div id="counter" class="counter">
       <button class="btn-actions" type="button" data-action="decrement">-1</button>
@@ -36,7 +42,7 @@
     </div>
   </div>
 
-  <script src="/src/js/04-counter.js" type="module"></script>
+  <script src="../js/miniprojects/04-counter.js" type="module"></script>
 </body>
 
 </html>
