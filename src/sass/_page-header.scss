@@ -22,20 +22,20 @@
   // justify-content: flex-start;
 }
 
-// .navigation__logo {
-//   // margin-right: 200px;
-//   @media screen and (min-width: 480px) {
-//     margin-right: 20px;
-//   }
+.logo {
+  display: flex;
+  align-items: center;
 
-//   @media screen and (min-width: 768px) {
-//     margin-right: 100px;
-//   }
+  &:hover .logo__photo {
+    transform: scale(1.1);
+    // margin-right: 15px;
+  }
+}
 
-//   @media screen and (min-width: 1200px) {
-//     margin-right: 100px;
-//   }
-// }
+.logo__photo {
+  margin-right: 10px;
+  transition: 500ms $delay;
+}
 
 // Стилизация блока с кнопками перехода
 .navigation__pages {
