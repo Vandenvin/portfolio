@@ -1,2 +1,0 @@
-const e=document.querySelector(".js-header-icon-tel"),d=document.querySelector(".js-header-icon-mail"),t=document.querySelector(".js-header-mail"),c=document.querySelector(".js-header-tel");e.addEventListener("click",(function(){t.classList.add("hidden"),c.classList.toggle("hidden")})),d.addEventListener("click",(function(){c.classList.add("hidden"),t.classList.toggle("hidden")}));
-//# sourceMappingURL=portfolio.345b7c43.js.map
