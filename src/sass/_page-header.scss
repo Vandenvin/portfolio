@@ -26,15 +26,16 @@
   display: flex;
   align-items: center;
 
-  &:hover .logo__photo {
-    transform: scale(1.1);
+  transition: 500ms $delay;
+
+  &:hover {
+    transform: scale(1.2);
     // margin-right: 15px;
   }
 }
 
 .logo__photo {
   margin-right: 10px;
-  transition: 500ms $delay;
 }
 
 // Стилизация блока с кнопками перехода
