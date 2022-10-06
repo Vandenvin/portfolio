@@ -39,7 +39,6 @@
 }
 
 .career__block {
-  width: 380px;
   border: 1px solid #dedede;
   display: inline-block;
   position: relative;
@@ -48,6 +47,14 @@
   border-radius: 9px;
   padding: 15px;
   font-family: 'Fira Sans', sans-serif;
+
+  @media screen and (min-width: 480px) {
+    width: 250px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 380px;
+  }
 }
 
 .career__title {
@@ -145,13 +152,28 @@
 
 //Стилизауия блоков с детальной информацией
 .career__information {
-  width: 550px;
-  margin-left: 50px;
+  outline: 1px dashed black;
+
+  margin-top: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 550px;
+    // display: block;
+    margin-left: 50px;
+    // margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+    width: 550px;
+  }
 }
 
 .career-info-1 {
-  display: block;
-
   animation: fadeIn;
   animation-duration: 2s;
   animation-delay: $delay;
@@ -161,10 +183,20 @@
   display: none;
 }
 
-.career-info-1 .career-info__img {
-  display: flex;
+.career-info__img {
+  // display: flex;
   align-items: center;
-  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 550px;
+  }
 }
 
 .career-info-2 {
@@ -179,10 +211,6 @@
   display: none;
 }
 
-.career-info-2 .career-info__img {
-  width: 550px;
-}
-
 .career-info-3 {
   display: block;
 
@@ -193,11 +221,6 @@
 
 .career-info-3.hidden {
   display: none;
-}
-
-.career-info-3 .career-info__img {
-  align-items: center;
-  width: 550px;
 }
 
 .career-info-4 {
@@ -212,11 +235,6 @@
   display: none;
 }
 
-.career-info-4 .career-info__img {
-  align-items: center;
-  width: 550px;
-}
-
 .career-info-5 {
   display: block;
 
@@ -227,11 +245,6 @@
 
 .career-info-5.hidden {
   display: none;
-}
-
-.career-info-5 .career-info__img {
-  align-items: center;
-  width: 550px;
 }
 
 .career-info__title {
