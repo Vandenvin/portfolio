@@ -18,9 +18,9 @@
   // outline: 1px dashed black;
 }
 
-section.main {
+.main.index {
   margin-top: 20px;
-  // margin-bottom: 100px;
+  margin-bottom: 100px;
 
   // outline: 1px dashed black;
 }
@@ -34,17 +34,28 @@ section.main {
 }
 
 .about__left-data {
-  width: 550px;
-  margin-right: 20px;
+  outline: 1px dashed black;
 
-  // outline: 1px dashed black;
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
 
-  padding: 10px;
+  @media screen and (min-width: 768px) {
+    width: 550px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
 }
 
 .about__photo {
-  width: 500px;
-  // height: 500px;
+  @media screen and (min-width: 480px) {
+    max-width: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+  }
 }
 
 .about__sticky-container {
@@ -53,8 +64,19 @@ section.main {
 }
 
 .about__information {
-  width: 550px;
+  display: block;
+  max-width: 350px;
   padding: 10px;
+
+  outline: 1px dashed black;
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 550px;
+  }
 }
 
 .about__position {
@@ -68,9 +90,17 @@ section.main {
 .about__name {
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  // font-size: 30px;
   line-height: 55px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .about__location {
