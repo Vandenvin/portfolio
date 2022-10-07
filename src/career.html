@@ -13,109 +13,197 @@
 <body>
 
   <header class="page-header">
-    <div class="container header">
+    <div class="container">
 
-      <a href="./index.html" class="navigation__link logo">
-        <!-- <img src="./images/my-logo.png" alt="my logo" class="logo__photo" width="60"> -->
-        Serhii Vandenvin
-      </a>
-      <nav class="header__navigation">
+      <div class="mobile-thumb">
+        <div class="mobile-menu">
+          <button class="open-menu js-open-menu is-open" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <button class="close-menu js-close-menu">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
 
-        <ul class="navigation__pages">
-          <li class="navigation__item">
-            <a href="./index.html" class="navigation__link">about</a>
-            <span></span><span></span><span></span><span></span>
-          </li>
-
-          <li class="navigation__item  navigation__item--current">
-            <a href="./career.html" class="navigation__link">career</a>
-            <span></span><span></span><span></span><span></span>
-          </li>
-
-          <li class="navigation__item">
-            <a href="./portfolio.html" class="navigation__link">portfolio</a>
-            <span></span><span></span><span></span><span></span>
-          </li>
-
-
-        </ul>
-      </nav>
-
-      <div class="header__contact dropdown">
-        <div class="navigation__item list">
-          <a href="#/" class="navigation__link">contact</a>
-          <span></span><span></span><span></span><span></span>
-        </div>
-
-        <div class="dropdown-content">
-          <ul class="header-contact__list">
-            <li class="header-contact__item header-contact__tel">
-              <svg class="header-contact__icon header-contact__icon-telephone" width="20" height="32">
-                <use href="./images/social-icon-sprite.svg#icon-smartphone"></use>
-              </svg>
-              <a href="tel:+380957001442" class="header-contact__link">
-                +380957001442
-              </a>
-            </li>
-            <li class="header-contact__item header-contact__mail">
-              <svg class="header-contact__icon header-contact__icon-mail" width="32" height="24">
-                <use href="./images/social-icon-sprite.svg#icon-gmail"></use>
-              </svg>
-              <a href="mailto:sevandenvin@gmail.com" class="header-contact__link">
-                sevandenvin@gmail.com
-              </a>
-            </li>
-
-          </ul>
-          <hr>
-          <div class="contact-social">
-            <ul class="social-links">
-              <li class="social-links__item">
-                <a href="https://t.me/Van_den_Vin" target="_blank" class="social-links__link">
-                  <div class="social-links__thumb">
-                    <svg width="30" height="30">
-                      <use href="./images/social-icon-sprite.svg#icon-telegram"> </use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-
-              <li class="social-links__item">
-                <a href="https://github.com/Vandenvin" target="_blank" class="social-links__link">
-                  <div class="social-links__thumb">
-                    <svg width="30" height="30">
-                      <use href="./images/social-icon-sprite.svg#icon-github"> </use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-
-              <li class="social-links__item">
-                <a href="https://www.linkedin.com/in/vandenvin-sergey-8298a293/" target="_blank"
-                  class="social-links__link">
-                  <div class="social-links__thumb">
-                    <svg width="30" height="30">
-                      <use href="./images/social-icon-sprite.svg#icon-linkedin"> </use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-
-              <li class="social-links__item">
-                <a href="https://www.instagram.com/sergeivandenvin/" target="_blank" class="social-links__link">
-                  <div class="social-links__thumb">
-                    <svg width="30" height="30">
-                      <use href="./images/social-icon-sprite.svg#icon-instagram"> </use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-            </ul>
+          <div class="mobile-logo">
+            <a href="./index.html" class="navigation__link logo"> Serhii Vandenvin</a>
           </div>
 
         </div>
 
+        <div class="menu-container js-menu-container" id="mobile-menu">
 
+          <ul class="mobile-menu">
+            <li><a href="./index.html" class="link navigation__item--current">about</a></li>
+            <li><a href="./career.html" class="link">career</a></li>
+            <li><a href="./portfolio.html" class="link">portfolio</a></li>
+          </ul>
+          <hr class="menu-line">
+          <ul class="mobile-menu-contact">
+            <li class="mobile-menu-contact__item">
+              <a href="tel:+380957001442">
+                <svg width="20" height="32">
+                  <use href="./images/social-icon-sprite.svg#icon-smartphone"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-contact__item">
+              <a href="mailto:sevandenvin@gmail.com">
+                <svg width="32" height="24">
+                  <use href="./images/social-icon-sprite.svg#icon-gmail"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-contact__item">
+              <a href="https://t.me/Van_den_Vin" target="_blank">
+                <svg width="30" height="30">
+                  <use href="./images/social-icon-sprite.svg#icon-telegram"> </use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-contact__item">
+              <a href="https://github.com/Vandenvin" target="_blank">
+                <svg width="30" height="30">
+                  <use href="./images/social-icon-sprite.svg#icon-github"> </use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-contact__item">
+              <a href="https://www.linkedin.com/in/vandenvin-sergey-8298a293/" target="_blank">
+                <svg width="30" height="30">
+                  <use href="./images/social-icon-sprite.svg#icon-linkedin"> </use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-contact__item">
+              <a href="https://www.instagram.com/sergeivandenvin/" target="_blank">
+                <svg width="30" height="30">
+                  <use href="./images/social-icon-sprite.svg#icon-instagram"> </use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="header">
+        <div class="navigation__logo">
+
+          <a href="./index.html" class="navigation__link logo">
+            <!-- <img src="./images/my-logo.png" alt="my logo" class="logo__photo" width="60"> -->
+            Serhii Vandenvin
+          </a>
+        </div>
+
+        <nav class="header__navigation">
+
+          <ul class="navigation__pages">
+            <li class="navigation__item navigation__item--current">
+              <a href="./index.html" class="navigation__link">about</a>
+              <span></span><span></span><span></span><span></span>
+            </li>
+
+            <li class="navigation__item">
+              <a href="./career.html" class="navigation__link">career</a>
+              <span></span><span></span><span></span><span></span>
+            </li>
+
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link">portfolio</a>
+              <span></span><span></span><span></span><span></span>
+            </li>
+
+
+          </ul>
+        </nav>
+
+        <div class="header__contact dropdown">
+          <div class="navigation__item list">
+            <a href="#/" class="navigation__link">contact</a>
+            <span></span><span></span><span></span><span></span>
+          </div>
+
+          <div class="dropdown-content">
+            <ul class="header-contact__list">
+              <li class="header-contact__item header-contact__tel">
+                <svg class="header-contact__icon header-contact__icon-telephone" width="20" height="32">
+                  <use href="./images/social-icon-sprite.svg#icon-smartphone"></use>
+                </svg>
+                <a href="tel:+380957001442" class="header-contact__link">
+                  +380957001442
+                </a>
+              </li>
+              <li class="header-contact__item header-contact__mail">
+                <svg class="header-contact__icon header-contact__icon-mail" width="32" height="24">
+                  <use href="./images/social-icon-sprite.svg#icon-gmail"></use>
+                </svg>
+                <a href="mailto:sevandenvin@gmail.com" class="header-contact__link">
+                  sevandenvin@gmail.com
+                </a>
+              </li>
+
+            </ul>
+            <hr>
+            <div class="contact-social">
+              <ul class="social-links">
+                <li class="social-links__item">
+                  <a href="https://t.me/Van_den_Vin" target="_blank" class="social-links__link">
+                    <div class="social-links__thumb">
+                      <svg width="30" height="30">
+                        <use href="./images/social-icon-sprite.svg#icon-telegram"> </use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="social-links__item">
+                  <a href="https://github.com/Vandenvin" target="_blank" class="social-links__link">
+                    <div class="social-links__thumb">
+                      <svg width="30" height="30">
+                        <use href="./images/social-icon-sprite.svg#icon-github"> </use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="social-links__item">
+                  <a href="https://www.linkedin.com/in/vandenvin-sergey-8298a293/" target="_blank"
+                    class="social-links__link">
+                    <div class="social-links__thumb">
+                      <svg width="30" height="30">
+                        <use href="./images/social-icon-sprite.svg#icon-linkedin"> </use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="social-links__item">
+                  <a href="https://www.instagram.com/sergeivandenvin/" target="_blank" class="social-links__link">
+                    <div class="social-links__thumb">
+                      <svg width="30" height="30">
+                        <use href="./images/social-icon-sprite.svg#icon-instagram"> </use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+
+        </div>
       </div>
 
     </div>
@@ -391,6 +479,7 @@
   </footer>
 
   <script type="module" src="./js/career.js"></script>
+  <script type="module" src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

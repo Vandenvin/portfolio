@@ -34,7 +34,7 @@
 }
 
 .about__left-data {
-  outline: 1px dashed black;
+  // outline: 1px dashed black;
 
   @media screen and (min-width: 480px) {
     width: 400px;
@@ -68,7 +68,7 @@
   max-width: 350px;
   padding: 10px;
 
-  outline: 1px dashed black;
+  // outline: 1px dashed black;
 
   @media screen and (min-width: 480px) {
     max-width: 450px;
@@ -85,6 +85,7 @@
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .about__name {
@@ -130,8 +131,17 @@
 
 .project__list {
   padding: 0;
+  margin: 0;
   margin-left: 25px;
   margin-top: 10px;
+
+  display: inline-block;
+}
+.about__projects {
+  width: 100%;
+  // width: 300px;
+
+  // outline: 1px dashed black;
 }
 
 .project__item {
@@ -141,7 +151,9 @@
   line-height: 24px;
   color: #000000;
 
-  min-width: 400px;
+  width: 100%;
+
+  // outline: 1px dashed black;
 }
 
 .project__item-text,
