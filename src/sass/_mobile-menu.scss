@@ -7,7 +7,7 @@
 .mobile-menu {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 70px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -78,17 +78,17 @@
 
 .menu-container {
   position: absolute;
-  top: 55px;
-  left: 0;
-  width: 450px;
-  padding: 15px;
+  top: 75px;
+  left: 16px;
+  width: 400px;
+  // padding: 10px;
   background-color: $header-background-color;
   z-index: 1;
 
   display: flex;
   justify-content: center;
 
-  transform: translatey(-170%);
+  transform: translatey(-200%);
   transition: transform 250ms ease-in-out;
 }
 
