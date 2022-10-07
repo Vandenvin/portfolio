@@ -1,7 +1,7 @@
 // стилизация мобильного меню
 
 .mobile-thumb {
-  position: relative;
+  // position: relative;
 }
 
 .mobile-menu {
@@ -79,8 +79,9 @@
 .menu-container {
   position: absolute;
   top: 75px;
-  left: 16px;
-  width: 400px;
+  left: 0;
+  // width: 430px;
+  width: 100vw;
   // padding: 10px;
   background-color: $header-background-color;
   z-index: 1;
