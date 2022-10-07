@@ -1,0 +1,115 @@
+// стилизация мобильного меню
+
+.mobile-thumb {
+  position: relative;
+}
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  height: 50px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.open-menu {
+  display: none;
+}
+
+.open-menu.is-open {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: $header-color;
+  fill: $header-background-color;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  transition: background-color 500ms $delay, fill 500ms $delay;
+}
+
+.open-menu:hover,
+.open-menu:focus {
+  background-color: rgba(245, 242, 242, 0.1);
+  fill: $header-color;
+}
+
+.close-menu {
+  display: none;
+}
+
+.close-menu.is-open {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: $header-color;
+  fill: $header-background-color;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  transition: background-color 500ms $delay, fill 500ms $delay;
+}
+
+.close-menu:hover,
+.close-menu:focus {
+  background-color: rgba(245, 242, 242, 0.1);
+  fill: $header-color;
+}
+
+.mobile-logo {
+  margin-left: 100px;
+}
+
+.menu-container {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 450px;
+  padding: 15px;
+  background-color: $header-background-color;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+
+  transform: translatey(-170%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateY(0);
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+
+  transition: color 250ms $delay;
+  &:hover {
+    color: $header-focus-color;
+  }
+}
