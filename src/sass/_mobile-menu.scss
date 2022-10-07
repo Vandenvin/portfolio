@@ -120,6 +120,10 @@
   &:hover {
     color: $header-focus-color;
   }
+
+  &.mobile-menu__item--current {
+    color: $header-focus-color;
+  }
 }
 
 .menu-line {
