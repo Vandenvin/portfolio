@@ -1,9 +1,5 @@
 // стилизация мобильного меню
 
-.mobile-thumb {
-  // position: relative;
-}
-
 .mobile-menu {
   display: flex;
   align-items: center;
@@ -86,14 +82,25 @@
   background-color: $header-background-color;
   z-index: 1;
 
+  // display: none;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  opacity: 0;
   justify-content: center;
 
-  transform: translatey(-200%);
-  transition: transform 250ms ease-in-out;
+  transform: translatey(-500%);
+  transition: transform 500ms $delay, opacity 1000ms $delay;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
+  opacity: 1;
+
   transform: translateY(0);
 }
 
@@ -113,4 +120,22 @@
   &:hover {
     color: $header-focus-color;
   }
+}
+
+.menu-line {
+  width: 100vw;
+  margin: 0;
+}
+
+.mobile-menu-contact {
+  @extend %list;
+  margin: 0;
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-contact__item:not(:last-child) {
+  margin-right: 10px;
 }
