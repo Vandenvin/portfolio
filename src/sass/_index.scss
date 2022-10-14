@@ -50,13 +50,25 @@
 }
 
 .about__photo {
+  animation: fadeIn;
+  animation-duration: 1000ms;
+  animation-delay: $delay;
+
+  transition: scale 500ms $delay, filter 500ms $delay;
+
   @media screen and (min-width: 480px) {
     max-width: 400px;
   }
   @media screen and (min-width: 768px) {
     max-width: 500px;
   }
-  filter: drop-shadow(10px 10px 10px rgb(110, 108, 108));
+
+  filter: drop-shadow(10px 10px 50px rgb(110, 108, 108));
+
+  &:hover {
+    filter: drop-shadow(10px 10px 50px rgb(47, 46, 46));
+    scale: 1.01;
+  }
 }
 
 .about__sticky-container {
@@ -126,6 +138,8 @@
 }
 
 .about__projects {
+  display: flex;
+  flex-direction: column;
   margin-right: 250px;
   margin-bottom: 30px;
 }

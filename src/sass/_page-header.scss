@@ -8,7 +8,7 @@
   z-index: 2;
 
   background-color: $header-background-color;
-  color: $header-color;
+  // color: $header-color;
   font-size: 20px;
   font-weight: 700;
 
@@ -27,94 +27,135 @@
 
 .logo {
   display: flex;
-  align-items: center;
+  // align-items: center;
+
+  color: $header-color;
+  font-size: 20px;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
 
   transition: 500ms $delay;
 
   &:hover {
     transform: scale(1.2);
-    // margin-right: 15px;
+    filter: drop-shadow(0px 0px 20px $header-color);
   }
 }
 
-.logo__photo {
-  margin-right: 10px;
-}
+// .logo__photo {
+//   margin-right: 10px;
+// }
 
 // Стилизация блока с кнопками перехода
-.navigation__pages {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
+// .navigation__pages {
+//   display: flex;
+//   align-items: center;
+//   padding: 0;
+// }
 
-.navigation__link {
-  text-decoration: none;
-  color: $header-color;
-}
+// .navigation__link {
+//   text-decoration: none;
+//   // color: $header-color;
+// }
 
 .navigation__item {
   @extend %list;
+  margin-right: 20px;
 
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 10px;
+  // }
+
+  // color: $header-color;
+  // font-size: 20px;
+  // border-radius: 4px;
+  // width: 120px;
+  // height: 40px;
+  // line-height: 2em;
+  // letter-spacing: 0.1em;
+  // text-align: center;
+  // position: relative;
+  // overflow: hidden;
+  // z-index: 2;
+  // transition: 500ms;
+
+  // &:hover .navigation__link {
+  //   color: $header-background-color;
+  // }
+
+  // & span {
+  //   position: absolute;
+  //   width: 25%;
+  //   height: 100%;
+  //   background-color: $header-color;
+  //   transform: translateY(150%);
+  //   border-radius: 50%;
+  //   right: calc((var(--n) - 1) * 25%);
+  //   transition: 0.5s;
+  //   transition-delay: calc((var(--n) - 1) * 0.1s);
+  //   z-index: -1;
+  // }
+
+  // &:hover span {
+  //   transform: translateY(0) scale(2);
+  // }
+  // & span:nth-child(1) {
+  //   --n: 1;
+  // }
+  // span:nth-child(2) {
+  //   --n: 2;
+  // }
+  // span:nth-child(3) {
+  //   --n: 3;
+  // }
+  // span:nth-child(4) {
+  //   --n: 4;
+  // }
+}
+
+.navigation__pages {
+  position: relative;
+  display: flex;
+}
+
+.navigation__link {
+  position: relative;
 
   color: $header-color;
   font-size: 20px;
-  border-radius: 4px;
-  width: 120px;
-  height: 40px;
+  text-decoration: none;
   line-height: 2em;
   letter-spacing: 0.1em;
-  text-align: center;
-  position: relative;
+  text-transform: uppercase;
+}
+
+.navigation__link::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
   overflow: hidden;
-  z-index: 2;
-  transition: 500ms;
-
-  &:hover .navigation__link {
-    color: $header-background-color;
-  }
-
-  & span {
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    background-color: $header-color;
-    transform: translateY(150%);
-    border-radius: 50%;
-    right: calc((var(--n) - 1) * 25%);
-    transition: 0.5s;
-    transition-delay: calc((var(--n) - 1) * 0.1s);
-    z-index: -1;
-  }
-
-  &:hover span {
-    transform: translateY(0) scale(2);
-  }
-  & span:nth-child(1) {
-    --n: 1;
-  }
-  span:nth-child(2) {
-    --n: 2;
-  }
-  span:nth-child(3) {
-    --n: 3;
-  }
-  span:nth-child(4) {
-    --n: 4;
-  }
+  transition: 1s;
+  border-radius: 2px;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+}
+.navigation__link:hover::before {
+  width: 105%;
+  filter: drop-shadow(0 0 25px var(--clr));
 }
 
 //If current page
-.navigation__item--current .navigation__link {
-  color: $header-background-color;
+.navigation__item--current .navigation__link::before {
+  width: 105%;
+  filter: drop-shadow(0 0 25px var(--clr));
 }
 
-.navigation__item--current span {
-  transform: translateY(0) scale(2);
-}
+// .navigation__item--current span {
+//   transform: translateY(0) scale(2);
+// }
 
 // Стилизация блока с контактами
 .dropdown {
@@ -159,13 +200,9 @@
   animation-duration: 2000ms;
 }
 
-.dropdown:hover span {
-  transform: translateY(0) scale(2);
-}
-
-.dropdown:hover .navigation__link {
-  color: $header-background-color;
-}
+// .dropdown:hover .navigation__link {
+//   color: $header-background-color;
+// }
 
 .header-contact__icon-telephone {
   margin-left: 6px;
